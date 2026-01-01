@@ -1,0 +1,24 @@
+{
+  "name": "faster-whisper",
+  "version": "1.0.0",
+  "description": "Fast speech-to-text transcription using faster-whisper with CTranslate2",
+  "author": "Claude Code User",
+  "license": "MIT",
+  "tags": ["audio", "transcription", "whisper", "speech-to-text", "multilingual"],
+  "categories": ["audio-processing", "productivity"],
+  "python": {
+    "version": ">=3.9",
+    "dependencies": [
+      "faster-whisper>=1.0.0"
+    ]
+  },
+  "entrypoint": "scripts/transcribe.py",
+  "config_template": "scripts/config.example.json",
+  "config_path": "scripts/config.json",
+  "examples": [
+    "transcribe audio.mp3",
+    "transcribe audio.mp3 --language zh",
+    "transcribe audio.mp3 --output transcript.txt",
+    "transcribe audio.mp3 --format srt --output video.srt"
+  ]
+}
